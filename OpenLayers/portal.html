@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel='stylesheet' href='css/fontello.css'>
+	<link rel='stylesheet' href='css/ol.css'>
+	<link rel="shortcut icon" href="images/earth-3.png" type="image/png" />
+	<title>Portal Mapowy</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="build/ol.js" type="text/javascript"></script>
+  <script src="build/jquery.js" defer="defer"></script>
+	<script src="build/ol.debug.js" defer="defer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4-src.js" type="text/javascript"></script>
+  </head>
+  <body>
+<div id="container">
+      <div id="logo">
+		      <img src="images/earth-3.png"/>
+	    </div>
+		  <div id="tytul">
+		      <h1>Portal mapowy</h1>
+		  </div>
+	    <div style="clear:both;"></div>
+       	<hr color="#4682B4"/>
+<div id="splitterVertical">
+  <div id="leftSide">
+    <a href="ewidencja.html"><button class="buttonPortale">EMUiA</button></a></br>
+      <a href="bdot.html"><button class="buttonPortale">BDOT</button></a></br>
+          <a href="gesut.html"><button class="buttonPortale">GESUT</button></a></br>
+	 <div id="rec">
+	    <h4>EMUiA</h4>
+	<li>
+    <i class="icon-globe"></i><input type="checkbox" id="visible" checked>dzialka ewide<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible1" checked> budynek<br/>
+	<i class="icon-globe-1"></i><input type="checkbox" id="visible2" checked> jednostka ewidencyjna  <br/>
+	<i class="icon-mail-1"></i><input type="checkbox" id="visible3" checked> adresy<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible4" checked> punkty graniczne<br/>
+	<i class="icon-globe-1"></i><input type="checkbox" id="visible5" checked> obreb ewidencyjny<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible6" checked> kontur klasyfikacyjny<br/>
+    <i class="icon-globe"></i><input type="checkbox" id="visible7" checked> kontur uzytku gruntowego<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible8" checked> obiekt trwale zw. z gruntem<br/>
+
+	</li>
+	<h4>GESUT</h4>
+	<li>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible9" checked>przewod kanalizac<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible10" checked>przewod wodociago<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible11" checked>przewod telekomun<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible12" checked>przewod cieplowni<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible13" checked>przewod gazowy<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible14" checked>przewod inny<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible15" checked>przewod niezind<br/>
+	<i class="icon-chart-line"></i><input type="checkbox" id="visible16" checked>przewod elektroen<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible17" checked>budowla podziemna<br/>
+	<i class="icon-embassy"></i><input type="checkbox" id="visible18" checked>slup i maszt<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible19" checked>punkt okreslonej w<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible20" checked>obudowa przewodu<br/>
+    <i class="icon-globe"></i><input type="checkbox" id="visible21" checked>urzadzenie techiczne <br/>
+
+	</li>
+	<h4>BDOT</h4>
+	<li>
+	<i class="icon-bus"></i><input type="checkbox" id="visible22" checked>jezdnia <br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible23" checked>budowla hydrot. jaz<br/>
+    <i class="icon-bicycle"></i><input type="checkbox" id="visible24" checked>plac<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible25" checked>woda powierzch<br/>
+	<i class="icon-subway"></i><input type="checkbox" id="visible26" checked>tory<br/>
+	<i class="icon-tree"></i><input type="checkbox" id="visible27" checked>zakrzewienie<br/>
+	<i class=" icon-location"></i><input type="checkbox" id="visible28" checked>komin przemyslowy<br/>
+	<i class="icon-air"></i><input type="checkbox" id="visible29" checked>most,wiadukt<br/>
+	<i class="icon-commerical-building"></i><input type="checkbox" id="visible30" checked>zbiornik na ciecz<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible31" checked>skarpa<br/>
+	<i class="icon-exchange"></i><input type="checkbox" id="visible32" checked>pasaz,alejka<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible33" checked>kraweznik<br/>
+	<i class="icon-home-outline"></i><input type="checkbox" id="visible34" checked>wiata,podpora<br/>
+	<i class="icon-town-hall"></i><input type="checkbox" id="visible35" checked>kaplica<br/>
+	<i class="icon-leaf-1"></i><input type="checkbox" id="visible36" checked>drzewo lisciaste<br/>
+	<i class="icon-globe"></i><input type="checkbox" id="visible37" checked>ogrodzenie<br/>
+	<i class="icon-exchange"></i><input type="checkbox" id="visible38" checked>row<br/>
+</li>
+  </div>
+</div>
+	     <div id="map"></div>
+	    <div style="clear:both;"></div>
+</div>
+    <div>
+	       <div id="info"></div>
+    </div>
+</div>
+</body>
+</html>
